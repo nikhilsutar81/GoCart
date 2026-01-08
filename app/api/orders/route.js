@@ -2,7 +2,6 @@ import prisma from "@/lib/prisma";
 import { getAuth } from "@clerk/nextjs/server";
 import { PaymentMethod } from "@prisma/client";
 import { NextResponse } from "next/server";
-import Stripe from "stripe";
 
 export async function POST(request) {
     try {
@@ -123,7 +122,7 @@ export async function GET(request) {
         const orders = await prisma.order.findMany({
             where:{userId, OR : [
                 {paymentMethod:PaymentMethod.COD},
-                {AND: [{paymentMethod: PaymentMethod.STRIPE}, {isPaid:true}]},
+                // Stripe payment method removed
             ]},
             include:{
                 orderItems: {include:{product: true}},
