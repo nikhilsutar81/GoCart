@@ -169,16 +169,6 @@ The platform supports complex multi-vendor scenarios, including separate order p
 
 ---
 
-## 🖼️ Screenshots & GIFs
-
-| Public Store | Store Owner Dashboard | Admin Panel |
-|:---:|:---:|:---:|
-| ![](assets/hero_product_img1.png) | ![](assets/hero_product_img2.png) | ![](assets/happy_store.webp) |
-
-> _Want to showcase your store or feature? Submit your screenshots or GIFs via a pull request!_
-
----
-
 ## 🎯 Purpose & Scope
 GoCart is a next-generation, multi-vendor e-commerce platform designed for:
 - **Customers:**
@@ -769,10 +759,8 @@ GoCart exposes a set of RESTful API endpoints and server actions for data access
 
 ## 📬 Contact
 
-- **Email:** [your-email@example.com](mailto:your-email@example.com)
-- **GitHub Issues:** [Open an issue](https://github.com/bloodwraith8851/gocart/issues)
-- **Twitter:** [@yourhandle](https://twitter.com/yourhandle)
-- **Project Repo:** [GoCart on GitHub](https://github.com/bloodwraith8851/gocart)
+- **Email:** [your-email@example.com](nikhilsutar81@gmail.com)
+- **Project Repo:** [GoCart on GitHub](https://github.com/nikhilsutar81/GoCart)
 
 > _We welcome feedback, questions, and collaboration!_
 
