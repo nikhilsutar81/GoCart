@@ -1,6 +1,5 @@
 <div align="center">
-  <h1><img src=https://gocart-shop-smarter.vercel.app/favicon.ico" width="20" height="20" alt="GoCart Favicon">
-   GoCart</h1>
+  <h1>GoCart</h1>
   <p>
     An open-source multi-vendor e-commerce platform built with Next.js and Tailwind CSS.
   </p>
