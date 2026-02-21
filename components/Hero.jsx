@@ -11,7 +11,7 @@ const Hero = () => {
 
     return (
         <div className='mx-6'>
-            <div className='flex max-xl:flex-col gap-8 max-w-6xl mx-auto my-16'>
+            <div className='flex max-xl:flex-col gap-8 max-w-6xl mx-auto my-8'>
                 
                 {/* LEFT MAIN HERO */}
                 <div className='relative flex-1 flex flex-col bg-gradient-to-br from-emerald-100 via-green-50 to-white backdrop-blur-xl border border-white/40 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] rounded-[32px] xl:min-h-[420px] overflow-hidden group transition-all duration-500'>
