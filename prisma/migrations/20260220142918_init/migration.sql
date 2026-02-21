@@ -2,7 +2,7 @@
 CREATE TYPE "public"."OrderStatus" AS ENUM ('ORDER_PLACED', 'PROCESSING', 'SHIPPED', 'DELIVERED');
 
 -- CreateEnum
-CREATE TYPE "public"."PaymentMethod" AS ENUM ('COD', 'STRIPE');
+CREATE TYPE "public"."PaymentMethod" AS ENUM ('COD');
 
 -- CreateTable
 CREATE TABLE "public"."User" (
