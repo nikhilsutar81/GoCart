@@ -2,7 +2,7 @@
 
 import imagekit from "@/configs/imageKit";
 import prisma from "@/lib/prisma";
-import { getAuth } from "@clerk/nextjs/server";
+import { getAuth, clerkClient } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 
 async function getOrCreateUser(userId) {
@@ -11,14 +11,22 @@ async function getOrCreateUser(userId) {
   });
 
   if (!user) {
-    user = await prisma.user.create({
-      data: {
-        id: userId,
-        name: "Unknown",
-        email: `user+${userId}@example.local`,
-        image: "",
-      },
-    });
+    try {
+      const client = await clerkClient();
+      const clerkUser = await client.users.getUser(userId);
+      
+      user = await prisma.user.create({
+        data: {
+          id: userId,
+          name: `${clerkUser.firstName || ''} ${clerkUser.lastName || ''}`.trim() || "User",
+          email: clerkUser.emailAddresses[0].emailAddress,
+          image: clerkUser.imageUrl || "",
+        },
+      });
+    } catch (error) {
+      console.log("Error fetching from Clerk:", error);
+      throw new Error("Failed to create user");
+    }
   }
 
   return user;
