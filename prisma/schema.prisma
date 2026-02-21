@@ -51,9 +51,9 @@ model Order {
   updatedAt     DateTime      @updatedAt
   isCouponUsed  Boolean       @default(false)
   coupon        Json          @default("{}")
-  address       Address       @relation(fields: [addressId], references: [id])
-  store         Store         @relation(fields: [storeId], references: [id])
-  user          User          @relation("BuyerRelation", fields: [userId], references: [id])
+  address       Address       @relation(fields: [addressId], references: [id], onDelete: Cascade)
+  store         Store         @relation(fields: [storeId], references: [id], onDelete: Cascade)
+  user          User          @relation("BuyerRelation", fields: [userId], references: [id], onDelete: Cascade)
   orderItems    OrderItem[]
 }
 
@@ -126,7 +126,7 @@ model Store {
   updatedAt   DateTime  @updatedAt
   Order       Order[]
   Product     Product[]
-  user        User      @relation(fields: [userId], references: [id])
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 enum OrderStatus {
