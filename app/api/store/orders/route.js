@@ -8,7 +8,7 @@ import { NextResponse } from "next/server";
 export async function POST(request) {
     try {
         const {userId} = getAuth(request)
-        const storeId = authSeller(userId);
+        const storeId = await authSeller(userId);
         if(!storeId){
             return NextResponse.json({error:"Not Authorized"}, {status:401})
         }
@@ -28,7 +28,7 @@ export async function POST(request) {
 export async function GET(request) {
     try {
         const {userId} = getAuth(request)
-        const storeId = authSeller(userId);
+        const storeId = await authSeller(userId);
         if(!storeId){
             return NextResponse.json({error:"Not Authorized"}, {status:401})
         }
