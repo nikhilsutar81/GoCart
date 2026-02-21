@@ -13,7 +13,7 @@ export default function Banner() {
     };
 
     return isOpen && (
-        <div className="w-full px-6 py-1 font-medium text-sm text-white text-center bg-gradient-to-r from-violet-600 via-purple-600 to-orange-500 shadow-lg">
+        <div className="w-full px-6 py-0.7 font-medium text-sm text-white text-center bg-gradient-to-r from-violet-600 via-purple-600 to-orange-500 shadow-lg">
             <div className='flex items-center justify-between max-w-6xl  mx-auto'>
                 <p className="font-medium tracking-wide"> Get <span className="font-semibold">20% OFF</span> on Your First Order!</p>
                 <div className="flex items-center space-x-6">
