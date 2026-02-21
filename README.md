@@ -1,7 +1,7 @@
 <div align="center">
   <h1>GoCart</h1>
   <p>
-    An open-source multi-vendor e-commerce platform built with Next.js and Tailwind CSS.
+    AI enabled multi-vendor e-commerce platform built with Next.js | PERN Stack project
   </p>
   <p>
     <a href=""><img src="https://img.shields.io/github/license/GreatStackDev/goCart?style=for-the-badge" alt="License"></a>
