@@ -16,7 +16,7 @@ export default function BestSelling() {
   if (bestSellingLoading) return <p className="text-center">Loading best selling...</p>;
 
   return (
-    <div className='px-6 my-30 max-w-6xl mx-auto'>
+    <div className='px-6 my-30 max-w-5xl mx-auto'>
       <Title 
         title='Best Selling' 
         description={`Showing ${bestSelling.length} of ${bestSelling.length} products`} 

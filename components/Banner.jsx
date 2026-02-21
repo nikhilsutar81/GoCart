@@ -13,8 +13,8 @@ export default function Banner() {
     };
 
     return isOpen && (
-        <div className="w-full px-6 py-2 font-medium text-sm text-white text-center bg-gradient-to-r from-violet-600 via-purple-600 to-orange-500 shadow-lg">
-            <div className='flex items-center justify-between max-w-7xl  mx-auto'>
+        <div className="w-full px-6 py-1 font-medium text-sm text-white text-center bg-gradient-to-r from-violet-600 via-purple-600 to-orange-500 shadow-lg">
+            <div className='flex items-center justify-between max-w-6xl  mx-auto'>
                 <p className="font-medium tracking-wide"> Get <span className="font-semibold">20% OFF</span> on Your First Order!</p>
                 <div className="flex items-center space-x-6">
                     <button onClick={handleClaim} type="button" className="hidden max-sm:hidden sm:inline-flex items-center justify-center px-6 py-2 text-xs sm:text-sm font-medium text-slate-900 bg-white/90 backdrop-blur-md rounded-full shadow-md hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all duration-300">Claim Offer</button>
